@@ -92,7 +92,7 @@ for idx in range(len(deltas)):
         N = Ns[j]
         means[j], errs[j] = blocking(U_samples[:N], block_size)
 
-    # Skip first point (like your original code)
+    # Skip first point
     Ns_plot    = Ns[1:]
     means_plot = means[1:]
     errs_plot  = errs[1:]
